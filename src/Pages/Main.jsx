@@ -3,10 +3,11 @@ import useLocalStorage from "../custom-hooks.jsx/useLocalStorage";
 
 function Main() {
   const [notes, setNotes] = useLocalStorage("note", "");
+  const notesReverse = [...notes].reverse();
 
   return (
     <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
-      {notes.length > 0 ? (
+      {notesReverse.length > 0 ? (
         notes.map((noteItem) => (
           <NoteCard
             id={noteItem.id}
