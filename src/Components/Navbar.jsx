@@ -1,4 +1,4 @@
-import Logo from "./logo";
+import Logo from "./Logo";
 import SearchIcon from "./SearchIcon";
 import Button from "./Button";
 
