@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  color: white;
+  padding: 20px;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* .btn {
+  @apply text-sm 
+} */
+
+/* 
+deep border: #10141e
+primary text color: #ffffff
+secondary text color: #9e9fa2
+button text color: white
+button color: #7c3aed
+*/
