@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home";
-import Applayout from "./applayout";
+import Applayout from "./Applayout";
 import NotePage from "./Pages/NotePage";
 import Error from "./Components/Error";
 import NewNote from "./Pages/NewNote";
