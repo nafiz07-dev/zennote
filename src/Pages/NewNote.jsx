@@ -3,6 +3,7 @@ import Buttons from "../Components/Buttons";
 import { useNavigate } from "react-router-dom";
 import useLocalStorage from "../custom-hooks.jsx/useLocalStorage";
 import formatDate from "../assets/formateDate";
+import backTic from "../assets/next.png"
 
 function NewNote() {
   const [title, setTitle] = useState("");
@@ -28,6 +29,9 @@ function NewNote() {
     navigate("/");
     setCreateNote(newNote);
   }
+  function handleBack() {
+    navigate("/");
+  }
 
   return (
     <div>
@@ -43,7 +47,11 @@ function NewNote() {
           onChange={(e) => setTitle(e.target.value)}
           className=" outline-0 w-[100%] p-2 mr-2 text-[18px] text-[#ffffff] rounded-md"
         />
-        <Buttons onClick={handleCreate}>Create</Buttons>
+        <div className="flex gap-1
+        ">
+          <Buttons onClick={handleCreate}>Create</Buttons>
+          <Buttons onClick={handleBack}><img src={backTic} alt="back-button" className="w-7"/></Buttons>
+        </div>
       </div>
       {/* Note */}
       <textarea

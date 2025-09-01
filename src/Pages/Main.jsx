@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import NoteCard from "../Components/NoteCard";
 import useLocalStorage from "../custom-hooks.jsx/useLocalStorage";
 
@@ -19,9 +20,9 @@ function Main() {
           />
         ))
       ) : (
-        <p className="absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#9e9fa2]">
+        <Link to="/create" className="absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#9e9fa2]">
           Start by creating a new note
-        </p>
+        </Link>
       )}
     </div>
   );
